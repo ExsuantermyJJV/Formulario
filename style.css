@@ -1,0 +1,375 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400&display=swap');
+
+
+  
+/* .animacion */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+.content{
+  max-width: 1090px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+ .content .card{
+  background: #fff;
+  width: calc(33% - 20px);
+  text-align: center;
+  padding: 15px 20px  20px 20px;
+  box-shadow: 0 5px 10px rgba(226, 80, 80, 0.15);
+}
+.content .card .top{
+  height: 130px;
+  color: #fff;
+  padding: 12px 0 0 0 ;
+  clip-path: polygon(0 0, 100% 0, 100% 53%, 49% 100%, 0 53%);
+}
+
+.content .card .top .title{
+ font-size: 27px;
+ font-weight: 600;
+}
+.content .card .top .price-sec{
+  margin-top: -10px;
+  font-weight: 600;
+}
+.content .card .top .price{
+  font-size: 45px;
+}
+.content .card .info{
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+.content .card button{
+  outline: none;
+  border: none;
+  height: 42px;
+  color: #fff;
+  margin-top: 30px;
+  border-radius: 3px;
+  font-size: 18px;
+  width: 100%;
+  display: block;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+.content .three .top,
+.content .three button{
+  background: #f9580e;
+}
+.content button:hover {
+  filter: brightness(90%);
+}
+
+.content .three ::selection{
+background: #d0f9fb;
+}
+@media (max-width:1000px) {
+   .content .card{
+    background: rgb(255, 255, 255);
+    width: calc(50% - 20px);
+}
+}
+@media (max-width:715px) {
+ .content .card{
+    width: 100%;
+}
+}
+
+
+/* boton decorado */
+
+
+* {
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    text-decoration: none;
+    outline: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+
+/* parte soporte */
+
+/* acordeon */
+
+
+
+
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #030303;
+}
+
+.heading {
+    font-size: 3.5rem;
+    color: #ffffff;
+    text-align: center;
+    padding: 6rem 1rem 0 0;
+    letter-spacing: .2rem;
+    font-weight: 600;
+}
+
+.heading1 {
+    font-size: 4rem;
+    color: #000000;
+    text-align: center;
+    padding: 6rem 1rem 0 0;
+    letter-spacing: .2rem;
+    font-weight: 600;
+}
+
+.title {
+    padding: 0 1rem;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+    color: #fff;
+}
+
+header {
+    width: 100%;
+    background: #000000;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    z-index: 1000;
+    transition: .2s;
+}
+header .navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+}
+
+header .navbar ul li {
+    margin: 0 1rem;
+}
+
+header .navbar ul li a {
+    font-size: 2rem;
+    color: #fff;
+    transition: .2s;
+}
+
+header .navbar ul li .active,
+header .navbar ul li a:hover {
+    color: #f9580e;
+}
+
+
+header .logo {
+    font-size: 1.9rem;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+header .fa-bars {
+    font-size: 3rem;
+    color: #f9580e;
+    cursor: pointer;
+    display: none;
+    transition: .2s;
+}
+
+
+
+.home .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding-top: 7rem;
+    padding-bottom: 5rem;
+    text-align: center;
+}
+
+
+.contact {
+    background: #000000;
+}
+
+.contact .row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.contact .row .form-container {
+    width: 50%;
+    
+}
+
+.contact .row .form-container input, textarea {
+    height: 4rem;
+    width: 100%;
+    background: #fff;
+    border-radius: 5rem;
+    padding: 0 1rem;
+    margin: 1rem 0;
+    color: #000000;
+    font-size: 1.7rem;
+    transition: .2s linear;
+   
+}
+
+.contact .row .form-container input:focus, textarea:focus {
+    border: .4rem solid #f9580e;
+}
+
+.contact .row .form-container textarea {
+    height: 20rem;
+    border-radius: 1rem;
+    padding: 1rem;
+    resize: none;
+}
+
+.contact .row .form-container input[type="submit"] {
+    height: 5rem;
+    width: 17rem;
+    background: #f9580e;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2rem;
+    transition: .2s;
+    
+}
+
+.contact .row .form-container input[type="submit"]:hover {
+    background: none;
+    color: #f9580e;
+    border: .2rem solid #f9580e;
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    padding-top: 1%;
+   
+}
+
+.footer .icons {
+    padding: 3rem 0;
+}
+
+.footer .icons a {
+    height: 4.5rem;
+    width: 4.5rem;
+    line-height: 4.2rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #ffc246;
+    border: .2rem solid #ffc246;
+    font-size: 2rem;
+    margin: 0 .1rem;
+    transition: .2s linear;
+
+}
+
+.footer .icons a:hover {
+    color: #fff;
+    background: #f9580e;
+    border-color: #f9580e;
+}
+
+.logoimg{
+    height: 5vh;
+    position: fixed;
+    left: 17vh;
+}
+
+@media (max-width: 768px) {
+    
+    html {
+        font-size: 55%;
+    }
+
+    header .fa-bars {
+        display: block;
+    }
+
+    header .navbar {
+        position: fixed;
+        top: -100rem;
+        left: 0;
+        width: 100%;
+        background: #171717;
+        border-radius: 1rem;
+        opacity: 0;
+        transition: .2s linear;
+    }
+
+    header .navbar ul {
+        flex-flow: column;
+        padding: 2rem 0;
+    }
+
+    header .navbar ul li {
+        margin: 1rem 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    header .navbar ul li a {
+        font-size: 3rem;
+        display: block;
+    }
+
+    header .nav-toggle {
+        top:5.5rem;
+        opacity: 1;
+    }
+
+    .home .content p {
+        padding: 1.5rem 2rem;
+    }
+
+    .about .row {
+        flex-direction: column-reverse;
+    }
+
+    .about .row .image img {
+        height: 30vh;
+        width: 90vw;
+    }
+
+    .about .row .content {
+        padding: 0 2.5rem;
+    }
+
+    .course .box-container {
+        width: 100%;
+    }
+
+    .contact .row {
+        flex-flow: column;
+    }
+
+    .contact .row .form-container {
+        width: 90%;
+        padding: 0;
+
+    }
+
+}
