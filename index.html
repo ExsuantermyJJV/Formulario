@@ -2,13 +2,123 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="google">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>M. Griega</title>
+    <title>AgenciaMomemtum</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<link rel="shortcut icon" href="./img/icon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  
+    <header>
+        <a href="#" class="logo">Momemtum</a>
+        <img class="logoimg"  src="./img/icon.jpg" alt="">
 
-    <div class="contprinci"></div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home" class="active">Página web</a></li>
+                <li><a href="#course" >Comprar ahora</a></li>
+                <li><a href="#contact" >Contacto</a></li>
+            </ul>
+            
+        </nav>
+        <div class="fas fa-bars"></div>
+    </header>
+   
+    <section class="contact" id="contact">   
+        <div class="row">
+            <div class="form-container">
+				<h1 class="heading">Masterclass</h1>
+
+                <form target="_blank"  action="https://formsubmit.co/Juanprogramador12@gmail.com" method="POST">
+                    <input type="text" placeholder="Nombre" required>
+                    <input type="email" placeholder="Correo"  required>
+                    <input type="number" placeholder="Telefono">
+					<input type="text" placeholder="País" required>
+					<input type="submit" value="Ver la clase">        
+                </form>
+
+            </div>
+        </div>
+
+    </section>
+
+    <hr>
+
+	<br>
+	
+	<br>
+	
+
+<div class="body2" > 
     
+	<div class="content">
+		<div class="card three">
+		  <div class="top">
+			<div class="title">Acceso completo</div>
+			<div class="price-sec">
+			  <span class="price">$39</span>
+			  <span class="decimal">.99</span>
+			</div>
+		  </div>
+		  <div class="info">Recibe acceso ilimitado a todos nuestros beneficios</div>
+		
+			<button>¡Entrar Ahora!</button>
+		  </div>
+		</div>
+	  </div>
+
+	  <section class="footer">
+
+        <div class="icons">
+            <a target="_blank" href="https://vm.tiktok.com/ZMN6aU4Mj/" class="fab fa-tiktok"></a>
+            <a target="_blank" href="https://instagram.com/agencia_digital_momentum?igshid=YmMyMTA2M2Y=" class="fab fa-instagram"></a>
+            <a target="_blank" href="https://youtube.com/channel/UC0qbcQmXLjvRC115rxumC2Q" class="fab fa-youtube"></a>
+            <br>
+            <h4> &copy; copyright AgenciaMomemtum 2022 </h1>
+
+        </div>
+
+    </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <script>
+
+        $(document).ready(function() {
+
+            $('.fa-bars').click(function() {
+
+                $(this).toggleClass('fa-times');
+                $('.navbar').toggleClass('nav-toggle');
+
+            });
+
+            $(window).on('scroll load', function() {
+
+                $('.fa-bars').removeClass('fa-times');
+                $('.navbar').removeClass('nav-toggle');
+
+                $('section').each(function() {
+
+                    var id = $(this).attr('id');
+                    var height = $(this).height();
+                    var offset = $(this).offset().top -200;
+                    var top = $(window).scrollTop();
+
+                    if(top >= offset && top < offset + height) {
+                        $('.navbar ul li a').removeClass('active');
+                        $('.navbar').find('[href="#'+id+'"]').addClass('active');
+                    }
+
+                });
+
+            });
+
+        });
+
+    </script>
+
 </body>
 </html>
