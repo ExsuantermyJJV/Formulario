@@ -256,12 +256,6 @@ header .fa-bars {
     
 }
 
-.contact .row .form-container input[type="submit"]:hover {
-    background: none;
-    color: #f9580e;
-    border: .2rem solid #f9580e;
-}
-
 .footer {
     text-align: center;
     color: white;
